@@ -16,30 +16,47 @@
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
-    <div class="container">
-      <div class="card__img"></div>
-      <div class="card__info">
-        <h3>Perfume</h3>
-        <h1>Gabrielle Essence Eau De Parfum</h1>
-        <p>
-          A floral, solar and voluptuous interpretation composed by Olivier
-          Polge, Perfumer-Creator for the House of CHANEL.
-        </p>
-        <div class="card__price">
-          <span class="card__big-price"> $149.99 </span>
-          <span class="card__small-price">$169.99</span>
+    <main role="main">
+      <article class="container">
+        <div class="card__img" role="banner">
+          <picture>
+            <source
+              media="(min-width: 725px )"
+              srcset="./images/image-product-desktop.jpg"
+              class="img__desktop"
+            />
+            <img
+              src="./images/image-product-mobile.jpg"
+              alt="Perfume photo - Gabrielle Chanel"
+            />
+          </picture>
+        </div>  
+        <div class="card__info">
+          <p class="card__category">Perfume</p>
+          <h1>Gabrielle Essence Eau De Parfum</h1>
+          <p>
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="card__price">
+            <p class="card__big-price">$149.99</p>
+            <p class="card__small-price"><del>$169.99</del></p>
+          </div>
+          <button class="card__btn">
+            <img src="./images/icon-cart.svg" alt="cart icon" />
+            Add to Cart
+          </button>
         </div>
-        <button class="card__btn">
-          <img src="./images/icon-cart.svg" alt="" />
-          Add to Cart
-        </button>
-      </div>
-    </div>
-    <div class="attribution">
+      </article>
+    </main>
+    <footer class="attribution" role="contentinfo">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/colmenareshr">Humberto Colmenares</a>.
-    </div>
+      >. Coded by
+      <a href="https://github.com/colmenareshr" target="_blank"
+        >Humberto Colmenares</a
+      >.
+    </footer>
   </body>
 </html>
